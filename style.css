@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Now Display";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  padding: 3rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(143, 194, 159);
+}
+.wrapper .game-area {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.wrapper .game-area #ptop {
+  background-color: #0c570c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7em 1.5em;
+}
+.wrapper .game-area #ptop .score {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: white;
+}
+.wrapper .game-area #ptop .score h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.wrapper .game-area #ptop .score .box {
+  height: 1.7em;
+  width: 1.7em;
+  background-color: white;
+  border-radius: 0.25em;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.wrapper .game-area #pbtm {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.wrapper .game-area #pbtm .bubble {
+  height: 2.5em;
+  aspect-ratio: 1/1;
+  background-color: green;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.wrapper .game-area #pbtm .bubble:hover {
+  background-color: rgb(23, 75, 23);
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: clamp(16px, 1vw, 20px);
+  }
+  .wrapper .game-area {
+    min-height: 90vh;
+  }
+  .wrapper .game-area #ptop {
+    padding: 1em 20em;
+  }
+}

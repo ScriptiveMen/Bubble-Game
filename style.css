@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Helvetica Now Display";
+  font-family: "Geologica", sans-serif;
 }
 
 html,
@@ -42,7 +43,7 @@ body {
   color: white;
 }
 .wrapper .game-area #ptop .score h2 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 .wrapper .game-area #ptop .score .box {
@@ -50,7 +51,7 @@ body {
   width: 1.7em;
   background-color: white;
   border-radius: 0.25em;
-  color: black;
+  color: #1d5d1d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,7 +67,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5em;
-  font-size: 1.5rem;
   font-weight: 600;
 }
 .wrapper .game-area #pbtm .bubble {
@@ -95,5 +95,8 @@ body {
   }
   .wrapper .game-area #ptop {
     padding: 1em 20em;
+  }
+  .wrapper .game-area #ptop .score h2 {
+    font-size: 1rem;
   }
 }

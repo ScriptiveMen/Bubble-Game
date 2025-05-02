@@ -44,7 +44,7 @@ class BubbleGame {
       if (this.timerVal <= 0) {
         clearInterval(timeInt);
         this.gameOver = true;
-        this.container.innerHTML = `<h1>Game Over!</h1>`;
+        this.container.innerHTML = `<h2>Time Out!</h2>`;
       }
     }, 1000);
   }
